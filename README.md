@@ -1,4 +1,4 @@
-# moonLake
-Interface and markup for MoonLake - family rest area  
+# Moon Lake
+Interface and markup for Moon Lake - family rest area  
 
 Project contains one main page

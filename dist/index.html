@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Озеро лунное</title>
+	<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+	<link rel="stylesheet" href="css/vendor/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header class="header">
+		<img src="img/logo-house.svg" alt="" class="logo-ico">
+		<div class="logo-row">
+			<div class="container">
+				<div class="logo-container">
+					<a href="#" class="logo-link">
+						<img src="img/logo-name.svg" alt="" class="logo-name">
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="main-header-row">
+			<div class="container">
+				<div class="left-block">
+					<div class="burger-menu" data-toggle="modal" data-target="#main-menu">
+						<span></span>
+					</div>
+				</div>
+				<div class="right-block">
+					<a href="tel:+7(911)9260001" class="tel d-none d-lg-block">+7 (911) 926 00 01</a>
+					<a href="#" class="address d-none d-lg-flex">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.308 16.992" class="geo">
+							<defs>
+								<style>
+									.cls-2 {
+										fill: #fff;
+									}
+								</style>
+							</defs>
+							<g id="maps-and-flags" transform="translate(-70.573)">
+								<g id="Group_251" data-name="Group 251" transform="translate(70.573)">
+									<path id="Path_1234" data-name="Path 1234" class="cls-2" d="M76.727,0a6.161,6.161,0,0,0-6.154,6.154c0,4.211,5.507,10.393,5.742,10.654a.554.554,0,0,0,.825,0c.234-.261,5.742-6.443,5.742-10.654A6.161,6.161,0,0,0,76.727,0Zm0,9.25a3.1,3.1,0,1,1,3.1-3.1A3.1,3.1,0,0,1,76.727,9.25Z" transform="translate(-70.573)"/>
+								</g>
+							</g>
+						</svg>
+						ЛО, п. Лунное Озеро
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="main">
+		<div class="container">
+			<form action="" class="bid-form"><!-- active -->
+				<div class="bid-info">
+					<div class="dates-block">
+						<div class="arrival-block info-block">
+							<div class="title">
+								Заезд
+							</div>
+							<!-- <div class="fieldset"> -->
+								<!-- <input type="number" min="1" max="31" class="arr-day day">
+								<input type="number" min="1" max="12" class="month arr-month">
+								<input type="number" min="2019"  class="year arr-year"> -->
+								<input type="text" class="form-date-picker date">
+							<!-- </div> -->
+						</div>
+						<div class="departure-block info-block">
+							<div class="title">
+								Выезд
+							</div>
+							<!-- <div class="fieldset"> -->
+								<!-- <input type="number" min="1" max="31" class="dep-day day">
+								<input type="number" min="1" max="12" class="month dep-month">
+								<input type="number" min="2019"  class="year dep-year"> -->
+								<input type="text" class="form-date-picker date">
+							<!-- </div> -->
+						</div>
+					</div>
+					<div class="people-amount-block">
+						<div class="adults-amount-block info-block">
+							<div class="title">
+								Взрослых
+							</div>
+							<input type="number" min="0" value="2" class="adults-amount">
+						</div>
+						<div class="children-amount-block info-block">
+							<div class="title">
+								Детей
+							</div>
+							<input type="number" min="0" value="0" class="children-amount">
+						</div>
+					</div>
+					<button type="submit" class="submit-button">
+						Отправить заявку
+					</button>
+				</div>
+				<div class="customer-info">
+					<div class="name-block">
+						<div class="title">
+							Имя
+						</div>
+						<input type="text" class="name">
+					</div>
+					<div class="telephone-block">
+						<div class="title">
+							Телефон
+						</div>
+						<input type="tel" class="tel">
+					</div>
+					<div class="accept-block">
+						<input type="checkbox" class="accept" id="accept-checkbox">
+						<label for="accept-checkbox" class="accept-label">
+							Я даю согласие на обработку персональных данных и соглашаюсь c политикой конфиденциальности
+						</label>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<div class="welcome-row">
+		Добро пожаловать!
+	</div>
+
+	<section class="cottages">
+		<div class="container">
+			<div class="title-row">
+				<h2>Наши коттеджи</h2>
+			</div>
+			<div class="cottages-list">
+				<a href="#" class="cottage-item">
+					<div class="img-container">
+						<img src="img/cottage_1.jpg" alt="">
+						<div class="plus-button">
+						</div>
+					</div>
+					<div class="desc">
+						<div class="number">
+							1
+						</div>
+						<div class="level">
+							дом комфорт-класса
+						</div>
+						<div class="audience">
+							семейный
+						</div>
+						<div class="area">
+							150 кв
+						</div>
+						<div class="details-list">
+							<div class="detail-item detail-item_capacity">
+								8 человек
+							</div>
+							<!-- <div class="detail-item detail-item_bathrooms-number">
+								2 санузла
+							</div> -->
+							<div class="detail-item detail-item_beds-number">
+								4 кровати
+							</div>
+							<div class="detail-item detail-item_sauna">
+								Сауна
+							</div>
+							<div class="detail-item detail-item_child"></div>
+						</div>
+						<!-- <div class="price">
+							от <span>8 300</span> руб/сут
+						</div> -->
+					</div>
+				</a>
+				<a href="#" class="cottage-item">
+					<div class="img-container">
+						<img src="img/cottage_2.jpg" alt="">
+						<div class="plus-button">
+						</div>
+					</div>
+					<div class="desc">
+						<div class="number">
+							2
+						</div>
+						<div class="level">
+							дом комфорт-класса
+						</div>
+						<div class="audience">
+							семейный
+						</div>
+						<div class="area">
+							150 кв
+						</div>
+						<div class="details-list">
+							<div class="detail-item detail-item_capacity">
+								8 человек
+							</div>
+							<!-- <div class="detail-item detail-item_bathrooms-number">
+								2 санузла
+							</div> -->
+							<div class="detail-item detail-item_beds-number">
+								4 кровати
+							</div>
+							<div class="detail-item detail-item_sauna">
+								Сауна
+							</div>
+							<div class="detail-item detail-item_child"></div>
+						</div>
+						<!-- <div class="price">
+							от <span>8 300</span> руб/сут
+						</div> -->
+					</div>
+				</a>
+				<a href="#" class="cottage-item">
+					<div class="img-container">
+						<img src="img/cottage_3.jpg" alt="">
+						<div class="plus-button">
+						</div>
+					</div>
+					<div class="desc">
+						<div class="number">
+							3
+						</div>
+						<div class="level">
+							дом комфорт-класса
+						</div>
+						<div class="audience">
+							<!-- для всей семьи -->
+						</div>
+						<div class="area">
+							150 кв
+						</div>
+						<div class="details-list">
+							<div class="detail-item detail-item_capacity">
+								8 человек
+							</div>
+							<!-- <div class="detail-item detail-item_bathrooms-number">
+								2 санузла
+							</div> -->
+							<div class="detail-item detail-item_beds-number">
+								4 кровати
+							</div>
+							<div class="detail-item detail-item_sauna">
+								Сауна
+							</div>
+						</div>
+						<!-- <div class="price">
+							от <span>8 300</span> руб/сут
+						</div> -->
+					</div>
+				</a>
+				<a href="#" class="cottage-item d-lg-block d-md-none d-block">
+					<div class="img-container">
+						<img src="img/cottage_4.jpg" alt="">
+						<div class="plus-button">
+						</div>
+					</div>
+					<div class="desc">
+						<div class="number">
+							4
+						</div>
+						<div class="level">
+							дом класса комфорт-плюс
+						</div>
+						<div class="audience">
+							<!-- для всей семьи -->
+						</div>
+						<div class="area">
+							174 кв
+						</div>
+						<div class="details-list">
+							<div class="detail-item detail-item_capacity">
+								8 человек
+							</div>
+							<!-- <div class="detail-item detail-item_bathrooms-number">
+								2 санузла
+							</div> -->
+							<div class="detail-item detail-item_beds-number">
+								4 кровати
+							</div>
+							<div class="detail-item detail-item_sauna">
+								Сауна
+							</div>
+						</div>
+						<!-- <div class="price">
+							от <span>8 300</span> руб/сут
+						</div> -->
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="entertainment">
+		<div class="container">
+			<div class="title-row">
+				<h2>Развлечения</h2>
+			</div>
+			<div class="ent-list">
+				<a href="#" class="ent-item">
+					<div class="img-container">
+						<img src="img/snowmobile.jpg" alt="">
+					</div>
+					<div class="desc">
+						<div class="name">
+							снегоход
+						</div>
+						<div class="audience">
+							для всей семьи
+						</div>
+						<div class="season-list">
+							<div class="season-item season-item_winter">
+								<img src="img/season_winter.svg" alt="">
+							</div>
+						</div>
+						<!-- <div class="price">
+							от <span>8 300</span> руб/сут
+						</div> -->
+					</div>
+				</a>
+				<a href="#" class="ent-item">
+					<div class="img-container">
+						<img src="img/sauna.jpg" alt="">
+					</div>
+					<div class="desc">
+						<div class="name">
+							сауна
+						</div>
+						<div class="audience">
+							для всей семьи
+						</div>
+						<div class="season-list">
+							<div class="season-item season-item_winter">
+								<img src="img/season_winter.svg" alt="">
+							</div>
+							<div class="season-item season-item_spring">
+								<img src="img/season_spring.svg" alt="">
+							</div>
+							<div class="season-item season-item_summer">
+								<img src="img/season_summer.svg" alt="">
+							</div>
+							<div class="season-item season-item_autumn">
+								<img src="img/season_autumn.svg" alt="">
+							</div>
+						</div>
+						<!-- <div class="price">
+							от <span>8 300</span> руб/сут
+						</div> -->
+					</div>
+				</a>
+				<a href="#" class="ent-item">
+					<div class="img-container">
+						<img src="img/milk.jpg" alt="">
+					</div>
+					<div class="desc">
+						<div class="name">
+							развлечение
+						</div>
+						<div class="audience">
+							для всей семьи
+						</div>
+						<div class="season-list">
+							<div class="season-item season-item_summer">
+								<img src="img/season_summer.svg" alt="">
+							</div>
+						</div>
+						<!-- <div class="price">
+							от <span>8 300</span> руб/сут
+						</div> -->
+					</div>
+				</a>
+				<a href="#" class="ent-item d-lg-block d-md-none d-block">
+					<div class="img-container">
+						<img src="img/fun.jpg" alt="">
+					</div>
+					<div class="desc">
+						<div class="name">
+							развлечение
+						</div>
+						<div class="audience">
+							для всей семьи
+						</div>
+						<div class="season-list">
+							<div class="season-item season-item_spring">
+								<img src="img/season_spring.svg" alt="">
+							</div>
+						</div>
+						<!-- <div class="price">
+							от <span>8 300</span> руб/сут
+						</div> -->
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="area">
+		<div class="container">
+			<div class="title-row">
+				<h2>Территория</h2>
+			</div>
+			<a href="#" class="map-link">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.328 29.445" class="geo">
+				  <defs>
+				    <style>
+				      .cls-1 {
+				        fill: #126276;
+				      }
+				    </style>
+				  </defs>
+				  <g id="maps-and-flags" transform="translate(-70.573)">
+				    <g id="Group_251" data-name="Group 251" transform="translate(70.573)">
+				      <path id="Path_1234" data-name="Path 1234" class="cls-1" d="M81.237,0A10.676,10.676,0,0,0,70.573,10.664c0,7.3,9.543,18.01,9.95,18.463a.961.961,0,0,0,1.429,0c.406-.452,9.95-11.165,9.95-18.463A10.676,10.676,0,0,0,81.237,0Zm0,16.029A5.365,5.365,0,1,1,86.6,10.664,5.371,5.371,0,0,1,81.237,16.029Z" transform="translate(-70.573)"/>
+				    </g>
+				  </g>
+				</svg>
+				На карте
+			</a>
+			<div class="img-container">
+				<!-- <div class="layout"> -->
+					<!-- <img src="img/area_mask.svg" alt=""> -->
+				<!-- </div> -->
+				<img src="img/area.svg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<img src="img/needles.jpg" alt="" class="needles-img">
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row content no-gutters">
+				<div class="col-12 col-lg-10">
+					<ul class="page-nav">
+						<li>
+							<a href="#">Забронировать</a>
+						</li>
+						<li>
+							<a href="#">Коттеджи</a>
+						</li>
+						<li>
+							<a href="#">Развлечения и активный отдых</a>
+						</li>
+						<li>
+							<a href="#">Территория</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+					<ul class="site-nav">
+						<li>
+							<a href="#">О нас</a>
+						</li>
+						<li>
+							<a href="#">Галерея</a>
+						</li>
+						<li>
+							<a href="#">Акции</a>
+						</li>
+						<li>
+							<a href="#">Детям</a>
+						</li>
+						<li>
+							<a href="#">Досуг</a>
+						</li>
+						<li>
+							<a href="#">Мероприятия</a>
+						</li>
+						<li>
+							<a href="#">Программа лояльности</a>
+						</li>
+						<li>
+							<a href="#">Цены</a>
+						</li>
+						<li>
+							<a href="#">Партнёры</a>
+						</li>
+					</ul>
+					<div class="marks">
+						<div class="mark-item mark-item_ta">
+							<img src="img/mark_ta.svg" alt="">
+							<div class="mark-value">
+								<span>9,5</span> отлично
+							</div>				
+						</div>
+						<div class="mark-item mark-item_vk">
+							<img src="img/mark_vk.svg" alt="">
+							<div class="mark-value">
+								<span>9,5</span> отлично
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-2 contacts">
+					<div class="social-block">
+						<a href="#" class="social-item social-item_fb">
+							<svg xmlns="http://www.w3.org/2000/svg" id="facebook-logo" viewBox="0 0 22.986 22.986">
+								<path id="Facebook__x28_alt_x29_" class="cls-1" d="M22.986,3.831A3.97,3.97,0,0,0,19.155,0H3.831A3.97,3.97,0,0,0,0,3.831V19.155a3.971,3.971,0,0,0,3.831,3.831h7.662V14.3H8.684V10.471h2.809V8.979c0-2.574,1.933-4.892,4.31-4.892h3.1V7.917H15.8c-.339,0-.734.411-.734,1.028v1.526H18.9V14.3H15.068v8.683h4.086a3.97,3.97,0,0,0,3.831-3.831Z" transform="translate(0 0)"/>
+							</svg>
+						</a>
+						<a href="#" class="social-item social-item_inst">
+							<svg xmlns="http://www.w3.org/2000/svg" id="Asset_2" data-name="Asset 2" viewBox="0 0 22.428 22.986">
+								<g id="Layer_2" data-name="Layer 2" transform="translate(0 0)">
+									<path id="Path_1235" data-name="Path 1235" class="cls-1" d="M0,17.822V5.165C.016,5.109.031,5.054.046,5a9.414,9.414,0,0,1,.422-1.52A5.462,5.462,0,0,1,5.7.01C9.366-.013,13.027.008,16.688,0a5.364,5.364,0,0,1,2.671.64,5.462,5.462,0,0,1,3.03,4.873c.068,3.985.029,7.972.007,11.958a4.953,4.953,0,0,1-.266,1.536,5.578,5.578,0,0,1-4.139,3.848c-.2.051-.409.088-.613.131H5.034c-.047-.015-.093-.035-.141-.046a8.631,8.631,0,0,1-.976-.225,5.652,5.652,0,0,1-3.785-4.24C.08,18.258.044,18.039,0,17.822ZM15.866,11.5a4.659,4.659,0,1,0-9.316-.032,4.716,4.716,0,0,0,4.654,4.8A4.594,4.594,0,0,0,14.5,14.878,4.831,4.831,0,0,0,15.866,11.5Zm2.8-6.266a1.388,1.388,0,1,0-1.327,1.454,1.4,1.4,0,0,0,1.327-1.454Z" transform="translate(0 0.002)"/>
+								</g>
+							</svg>
+						</a>
+						<a href="#" class="social-item social-item_vk">
+							<svg xmlns="http://www.w3.org/2000/svg" id="vkontakte-logo" viewBox="0 0 22.986 22.986">
+				
+								<path id="Path_1236" data-name="Path 1236" class="cls-1" d="M12.732,12.668a2.665,2.665,0,0,0-1.3-.215H10.069v2.816h1.254a2.582,2.582,0,0,0,1.457-.248,1.461,1.461,0,0,0,.576-1.2A1.435,1.435,0,0,0,12.732,12.668Zm-.516-2.4a1.309,1.309,0,0,0,.464-1.025,1.185,1.185,0,0,0-.544-1.024,3.362,3.362,0,0,0-1.473-.165h-.6v2.478h.788A2.163,2.163,0,0,0,12.216,10.263ZM18.945,0H4.04A4.04,4.04,0,0,0,0,4.04v14.9a4.041,4.041,0,0,0,4.04,4.04H18.945a4.041,4.041,0,0,0,4.04-4.04V4.04A4.041,4.041,0,0,0,18.945,0ZM12.116,17.367h-4.7V6.034h5.131a2.657,2.657,0,0,1,2.857,2.615,2.411,2.411,0,0,1-1.637,2.445v.033a2.58,2.58,0,0,1,2.332,2.8C16.1,15.579,14.981,17.367,12.116,17.367Z"/>
+							</svg>
+						</a>
+					</div>
+					<a href="tel:8 921 369 25 88" class="tel">8 921 369 25 88</a>
+				</div>
+			</div>
+			<div class="row bottom-row no-gutters">
+				<div class="about">
+					Россия, Ленинградская область, Выборгский район, Каменногорское городское поселение,
+					коттеджный посёлок Озеро Лунное 
+					<a href="tel:+7(911)9260001">+7 (911) 926 00 01</a>, <a href="mailto:rent@lunnoefamily.ru">rent@lunnoefamily.ru</a>
+				</div>
+				<div class="copyright">
+					Copyright © 2018-2019 Лунное Озеро All rights reserved.
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="main-menu" class="main-menu modal fade">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="closebutton">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" data-callibri_parse_form="true">
+						<span></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="menu-row">
+							<div class="modal-logo">
+								<img src="img/logo-house_blue.svg" class="l1">
+								<img src="img/logo-name_blue.svg" class="l2">
+							</div>
+							<nav>
+								<ul class="menu-list">
+									<li>
+										<a href="#">О нас</a>
+									</li>
+									<li>
+										<a href="#">Галерея</a>
+									</li>
+									<li>
+										<a href="#">Акции</a>
+									</li>
+								</ul>
+								<ul class="menu-list">
+									<li>
+										<a href="#">Детям</a>
+									</li>
+									<li>
+										<a href="#">Досуг</a>
+									</li>
+									<li>
+										<a href="#">Мероприятия</a>
+									</li>
+								</ul>
+								<ul class="menu-list">
+									<li>
+										<a href="#">Программа лояльности</a>
+									</li>
+									<li>
+										<a href="#">Цены</a>
+									</li>
+									<li>
+										<a href="#">Партнёры</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="contacts">
+								<a href="tel:+7(911)9260001" class="tel d-none d-lg-inline-block">+7 (911) 926 00 01</a>
+								<div class="social-block">
+									<a href="#" class="social-item social-item_fb">
+										<svg xmlns="http://www.w3.org/2000/svg" id="facebook-logo" viewBox="0 0 22.986 22.986">
+											<path id="Facebook__x28_alt_x29_" class="cls-1" d="M22.986,3.831A3.97,3.97,0,0,0,19.155,0H3.831A3.97,3.97,0,0,0,0,3.831V19.155a3.971,3.971,0,0,0,3.831,3.831h7.662V14.3H8.684V10.471h2.809V8.979c0-2.574,1.933-4.892,4.31-4.892h3.1V7.917H15.8c-.339,0-.734.411-.734,1.028v1.526H18.9V14.3H15.068v8.683h4.086a3.97,3.97,0,0,0,3.831-3.831Z" transform="translate(0 0)"/>
+										</svg>
+									</a>
+									<a href="#" class="social-item social-item_inst">
+										<svg xmlns="http://www.w3.org/2000/svg" id="Asset_2" data-name="Asset 2" viewBox="0 0 22.428 22.986">
+											<g id="Layer_2" data-name="Layer 2" transform="translate(0 0)">
+												<path id="Path_1235" data-name="Path 1235" class="cls-1" d="M0,17.822V5.165C.016,5.109.031,5.054.046,5a9.414,9.414,0,0,1,.422-1.52A5.462,5.462,0,0,1,5.7.01C9.366-.013,13.027.008,16.688,0a5.364,5.364,0,0,1,2.671.64,5.462,5.462,0,0,1,3.03,4.873c.068,3.985.029,7.972.007,11.958a4.953,4.953,0,0,1-.266,1.536,5.578,5.578,0,0,1-4.139,3.848c-.2.051-.409.088-.613.131H5.034c-.047-.015-.093-.035-.141-.046a8.631,8.631,0,0,1-.976-.225,5.652,5.652,0,0,1-3.785-4.24C.08,18.258.044,18.039,0,17.822ZM15.866,11.5a4.659,4.659,0,1,0-9.316-.032,4.716,4.716,0,0,0,4.654,4.8A4.594,4.594,0,0,0,14.5,14.878,4.831,4.831,0,0,0,15.866,11.5Zm2.8-6.266a1.388,1.388,0,1,0-1.327,1.454,1.4,1.4,0,0,0,1.327-1.454Z" transform="translate(0 0.002)"/>
+											</g>
+										</svg>
+									</a>
+									<a href="#" class="social-item social-item_vk">
+										<svg xmlns="http://www.w3.org/2000/svg" id="vkontakte-logo" viewBox="0 0 22.986 22.986">
+							
+											<path id="Path_1236" data-name="Path 1236" class="cls-1" d="M12.732,12.668a2.665,2.665,0,0,0-1.3-.215H10.069v2.816h1.254a2.582,2.582,0,0,0,1.457-.248,1.461,1.461,0,0,0,.576-1.2A1.435,1.435,0,0,0,12.732,12.668Zm-.516-2.4a1.309,1.309,0,0,0,.464-1.025,1.185,1.185,0,0,0-.544-1.024,3.362,3.362,0,0,0-1.473-.165h-.6v2.478h.788A2.163,2.163,0,0,0,12.216,10.263ZM18.945,0H4.04A4.04,4.04,0,0,0,0,4.04v14.9a4.041,4.041,0,0,0,4.04,4.04H18.945a4.041,4.041,0,0,0,4.04-4.04V4.04A4.041,4.041,0,0,0,18.945,0ZM12.116,17.367h-4.7V6.034h5.131a2.657,2.657,0,0,1,2.857,2.615,2.411,2.411,0,0,1-1.637,2.445v.033a2.58,2.58,0,0,1,2.332,2.8C16.1,15.579,14.981,17.367,12.116,17.367Z"/>
+										</svg>
+									</a>
+								</div>
+								<div class="reserve-button d-block" data-toggle="modal" data-target="#modal-form" data-dismiss="modal" aria-label="Close" data-callibri_parse_form="true">
+									Бронировать
+								</div>
+							</div>
+							<div class="collaborate">
+								По вопросам сотрудничества звоните или пишите <a href="mailto:rent@lunnoefamily.ru">rent@lunnoefamily.ru</a>
+							</div>
+							<div class="adress">
+								Россия, Ленинградская область, Выборгский район, Каменногорское городское поселение, коттеджный посёлок Озеро Лунное
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal-form" class="modal-form modal fade">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="closebutton">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" data-callibri_parse_form="true">
+						<span></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="logo-container">
+							<img src="img/logo-name_blue.svg" alt="">
+						</div>
+						<form action="" class="bid-form active">
+							<div class="bid-info">
+								<div class="dates-block">
+									<div class="arrival-block info-block">
+										<div class="title">
+											Заезд
+										</div>
+										<!-- <div class="fieldset"> -->
+											<!-- <input type="number" min="1" max="31" class="arr-day day">
+											<input type="number" min="1" max="12" class="month arr-month">
+											<input type="number" min="2019"  class="year arr-year"> -->
+											<input type="text" class="form-date-picker date">
+										<!-- </div> -->
+									</div>
+									<div class="departure-block info-block">
+										<div class="title">
+											Выезд
+										</div>
+										<!-- <div class="fieldset"> -->
+											<!-- <input type="number" min="1" max="31" class="dep-day day">
+											<input type="number" min="1" max="12" class="month dep-month">
+											<input type="number" min="2019"  class="year dep-year"> -->
+											<input type="text" class="form-date-picker date">
+										<!-- </div> -->
+									</div>
+								</div>
+								<div class="people-amount-block">
+									<div class="adults-amount-block info-block">
+										<div class="title">
+											Взрослых
+										</div>
+										<input type="number" min="0" value="2" class="adults-amount">
+									</div>
+									<div class="children-amount-block info-block">
+										<div class="title">
+											Детей
+										</div>
+										<input type="number" min="0" value="0" class="children-amount">
+									</div>
+								</div>
+								<button type="submit" class="submit-button">
+									Отправить заявку
+								</button>
+							</div>
+							<div class="customer-info">
+								<div class="name-block">
+									<div class="title">
+										Имя
+									</div>
+									<input type="text" class="name">
+								</div>
+								<div class="telephone-block">
+									<div class="title">
+										Телефон
+									</div>
+									<input type="tel" class="tel">
+								</div>
+								<div class="accept-block">
+									<input type="checkbox" class="accept" id="accept-checkbox">
+									<label for="accept-checkbox" class="accept-label">
+										Я даю согласие на обработку персональных данных и соглашаюсь c политикой конфиденциальности
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/vendor/jquery-3.2.1.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/moment.min.js"></script>
+	<script src="js/vendor/daterangepicker.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

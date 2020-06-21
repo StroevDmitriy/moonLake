@@ -400,6 +400,10 @@ h2:after {
   border: none;
   border-bottom: 1px solid rgba(18, 98, 118, 0.25);
 }
+.bid-form input::-webkit-outer-spin-button, .bid-form input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
 .bid-form .bid-info {
   display: flex;
 }

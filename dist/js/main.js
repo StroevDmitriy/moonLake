@@ -1,5 +1,5 @@
 jQuery(window).scroll(function() {
- 	logoRow = jQuery('.header .logo-row');
+	logoRow = jQuery('.header .logo-row');
 	mainHeaderRow = jQuery('.header .main-header-row');
 	if (jQuery(window).scrollTop() >= 118) {
 		logoRow.addClass('fixed');

@@ -331,6 +331,10 @@ h2
 		text-align: center
 		border: none
 		border-bottom: 1px solid rgba(18,98,118, .25)
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button
+			display: none
+			-webkit-appearance: none
 	.bid-info
 		display: flex
 		@media screen and (max-width: 991px)
@@ -434,6 +438,7 @@ h2
 		.adults-amount
 			width: 46px
 			margin: auto
+			
 			@media screen and (max-width: 991px)
 				margin-left: 0px
 			@media screen and (max-width: 575px)
